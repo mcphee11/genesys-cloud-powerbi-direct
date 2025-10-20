@@ -55,7 +55,7 @@ This example is for a basic connection and some table formatting you can create 
     data= Json.Document(Web.Contents(api_url,
     [
         RelativePath = query_path,
-        Headers = [#"Authorization"="Bearer "&token,#"Content-Type"="applicaiton/json"],
+        Headers = [#"Authorization"="Bearer "&token,#"Content-Type"="application/json"],
         Content = Text.ToBinary("{
                     ""conversationFilters"": [
                         {
