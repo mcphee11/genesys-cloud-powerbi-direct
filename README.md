@@ -85,7 +85,7 @@ This example is for a basic connection and some table formatting you can create 
     job_data= Function.InvokeAfter(()=>Json.Document(Web.Contents(api_url,
     [
         RelativePath = job_query_path,
-        Headers = [#"Authorization"="Bearer "&token,#"Content-Type"="applicaiton/json"]
+        Headers = [#"Authorization"="Bearer "&token,#"Content-Type"="application/json"]
     ])), #duration(0,0,0,30)),
     conversations = job_data[conversations],
     #"Converted to Table" = Table.FromList(conversations, Splitter.SplitByNothing(), null, null, ExtraValues.Error)
